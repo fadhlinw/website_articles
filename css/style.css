@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+header {
+    display: inline;
+}
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+.jumbotron {
+    background-image: url(ilustrasi.jpg);
+    background-size: auto;
+    background-position: center;
+    padding: 30px;
+    background-color: #1A120B;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-size: auto;
+}
+nav {
+    background-color: #3C2A21;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+}
+.dark-mode-btn {
+    width: 10em;
+    height: 5ex;
+    background-color: #1A120B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 89em;
+    top: 1em;
+}
+nav li {
+    list-style-type: none;
+}
+nav ul {
+    gap: 1rem;
+    padding-inline: 0rem;
+    display: flex;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding: .5rem .5rem;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    transition: all .2s ease-in-out;
+}
+#content {
+    text-align: justify;
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 75%;
+    gap: 1rem 2rem;
+    line-height: 2;
+}
+.content-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.room {
+    box-shadow: 0px 4px 9px 4px rgba(49, 47, 47, 0.75);
+    border-radius: 5px;
+    padding: 20px;
+}
+.profile h3 {
+    text-align: center;
+}
+.profile img {
+    width: 200px;
+}
+footer {
+    padding: 15px;
+    color: black;
+    background-color:#D5CEA3;
+    text-align: justify;
+}
+aside {
+    flex: 1;
+    width: 25%;
+    padding-left: 10px;
+}
+section p {
+    text-align: justify;
+}
+#footer-info-copyright{
+    font-size: auto;
+}
+#footer-info-copyright li {
+    list-style-type: none;
+    font-size: 80%;
+}
+#footer-info-copyright ul{
+    gap: 1rem;
+    padding-inline: 1rem;
+    display: flex;
+}
+#footer-info-copyright li a {
+    text-decoration: none;
+}
+#footer-info-copyright li a:hover {
+    text-decoration: underline;
+}
+.social-media ul {
+    list-style-type: none;
+    gap: 1rem;
+    padding-inline: 0rem;
+    display: flex;
+}
+.fa-youtube, .fa-linkedin-in, .fa-instagram{
+    color: #3C2A21;
+    font-size: 20px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .dark-mode-btn {
+        position: sticky;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav ul{
+        justify-content: center;
+      }
+    main {
+       flex-flow: column nowrap;
+     }
+     main aside {
+       align-self: center;
+     }
+}
+@media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+     main aside {
+       align-self: stretch;
+     }
+}
+@media screen and (max-width: 467px) {
+    main aside {
+      align-self: stretch;
+    }
+    header {
+        align-self: stretch;
+    }
+}
